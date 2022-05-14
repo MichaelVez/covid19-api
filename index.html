@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Corona API</title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
-    <script src="fetch.js"></script>
+    <div class="container">
+      <div class="chart-container">
+        <div class="onemore">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="btn">Click</div>
+        <div class="btn">Click</div>
+        <div class="btn">Click</div>
+        <div class="btn">Click</div>
+        <div class="btn">Click</div>
+        <div class="btn">Click</div>
+        <div class="btn">Click</div>
+      </div>
+    </div>
+    <script defer type="module" src="main.js"></script>
   </body>
 </html>
