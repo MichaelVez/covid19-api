@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corona API</title>
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/style.css" type="text/css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
@@ -14,23 +21,36 @@
     ></script>
   </head>
   <body>
+    <div class="massage">Please rotate the device for better experience.</div>
     <div class="container">
+      <div class="top">
+        <h1>Covid-19 API</h1>
+        <div class="av">Confirmed <span></span></div>
+        <div class="av">Critical <span></span></div>
+        <div class="av">Recovered <span></span></div>
+        <div class="av">Deaths <span></span></div>
+        <div class="av">Cases per mill <span></span></div>
+        <div class="av">Death rate <span></span>%</div>
+        <div class="av">Recovery rate <span></span>%</div>
+      </div>
+      <div class="buttons">
+        <div class="btn">Africa</div>
+        <div class="btn">Antarctica</div>
+        <div class="btn">Asia</div>
+        <div class="btn">Europe</div>
+        <div class="btn">North America</div>
+        <div class="btn">South America</div>
+        <div class="btn">Oceania</div>
+        <div class="btn">World</div>
+        <select name="" id="select"></select>
+      </div>
       <div class="chart-container">
         <div class="onemore">
           <canvas id="myChart"></canvas>
         </div>
       </div>
-
-      <div class="buttons">
-        <div class="btn">Click</div>
-        <div class="btn">Click</div>
-        <div class="btn">Click</div>
-        <div class="btn">Click</div>
-        <div class="btn">Click</div>
-        <div class="btn">Click</div>
-        <div class="btn">Click</div>
-      </div>
     </div>
+
     <script defer type="module" src="main.js"></script>
   </body>
 </html>

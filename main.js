@@ -1,4 +1,4 @@
 import { getContObj } from "./fetch.js";
 getContObj();
-import { drawChart } from "./chart.js";
-drawChart();
+import { buttonEvent } from "./button.js";
+buttonEvent();

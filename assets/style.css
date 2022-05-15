@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: azure;
 }
 .container {
   height: 100vh;
@@ -18,7 +20,18 @@
   text-align: center;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: 10vh;
+}
+.av {
+  display: none;
+}
+.top {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  align-items: center;
 }
 .chart-container {
   position: relative;
@@ -29,10 +42,37 @@
 }
 .onemore {
   height: 75vh;
-  width: 9000px;
+  width: 10000px;
+  margin: auto;
 }
 #myChart {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.btn {
+  border: 1px solid;
+  width: 10%;
+}
+select {
+  width: 15%;
+}
+.massage {
+  display: none;
+  font-size: 50px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  * {
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 400px) and (orientation: portrait) {
+  .massage {
+    display: inline-block;
+  }
+  .container {
+    display: none;
+  }
 }
