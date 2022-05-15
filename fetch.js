@@ -34,15 +34,20 @@ function getStats(str) {
       myArr.push(myCoronaObj[item].stats.critical);
       myArr.push(myCoronaObj[item].stats.recovered);
       myArr.push(myCoronaObj[item].stats.deaths);
+
       myArr.push(
         myCoronaObj[item].stats.calculated.cases_per_million_population
       );
-      myArr.push(
-        myCoronaObj[item].stats.calculated.death_rate.toString().slice(0, 5)
-      );
-      myArr.push(
-        myCoronaObj[item].stats.calculated.recovery_rate.toString().slice(0, 5)
-      );
+      if (myCoronaObj[item].stats.calculated.death_rate)
+        myArr.push(
+          myCoronaObj[item].stats.calculated.death_rate.toString().slice(0, 5)
+        );
+      if (myCoronaObj[item].stats.calculated.recovery_rate)
+        myArr.push(
+          myCoronaObj[item].stats.calculated.recovery_rate
+            .toString()
+            .slice(0, 5)
+        );
     }
   }
   return myArr;

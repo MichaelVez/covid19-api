@@ -51,8 +51,16 @@
   box-sizing: border-box;
 }
 .btn {
-  border: 1px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 5px;
   width: 10%;
+  background-color: inherit;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  color: white;
+  background-color: steelblue;
 }
 select {
   width: 15%;
